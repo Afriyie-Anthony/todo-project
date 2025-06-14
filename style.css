@@ -1,0 +1,44 @@
+/* Custom scrollbar */
+.todo-list::-webkit-scrollbar {
+  width: 6px;
+}
+.todo-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.todo-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth transitions */
+.todo-item {
+  transition: all 0.3s ease;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #4f46e5;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+.custom-checkbox:checked {
+  background-color: #4f46e5;
+}
+.custom-checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  left: 4px;
+  top: 1px;
+}
